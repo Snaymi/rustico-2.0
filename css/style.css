@@ -1,0 +1,142 @@
+:root{
+    --primary-color: #473C38;
+    --secondary-color: #C2B19C;
+    --gray-100: #F0F1F0;
+    ---gray-400: #666666;            
+}
+body{
+   font-family: 'Playfair Display', sans-serif;
+}
+img{
+    display: inline-block;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+p {
+    margin: 16px 0;
+    font-family: 'Roboto' , sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 60px;
+    line-height: 100%;
+    color: #fff;
+    font-weight:100;
+}
+h2{
+   font-size: 48px;
+   color: var(--primary-color);
+   font-weight: 100; 
+   line-height: 100%;;    
+}
+h3{
+    margin: 15px 0;
+    font-weight: 100;
+    color: var(--primary-color);
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.header{
+    position: sticky;
+}
+.header .container{
+ padding: 10px 0;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.header a{
+    color: var(--primary-color)
+}
+.menu{
+    display: flex;
+    gap: 65px;
+}
+.box1{
+    background-color: var(--primary-color);
+}
+.box1 .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 140px 0;
+}
+
+.txt{
+ color: #fff;
+ width: 460px;
+}
+.btn-link{
+    color: var(--primary-color);
+    border-radius: 5px;
+    padding: 10px 50px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+.box2 .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 140px 0;
+}
+.box2 p{
+    font-family: 'Roboto', sans-serif;
+    color: var(---gray-400);
+}
+.content{
+    width: 650px;
+}
+.btn{
+    padding: 10px 50px;
+    background-color: var(--primary-color);
+    color: var(--gray-100);
+    display: inline-block;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.cards .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img-card{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 160px;
+    width: 285px;
+}
+.img-card-home{
+    display: flex;
+    overflow: hidden;
+    align-items: start;
+    height: 160px;
+    width: 285px;
+}
+.img-card-mesa{
+    display: flex;
+    overflow: hidden;
+    align-items: end;
+    height: 160px;
+    width: 285px;
+}
+.card-box{
+    padding: 40px;
+}
+.card-box img{
+    border-radius: 5px;
+}
+.card-box a{
+    display: block;
+    text-align: center;
+}
+.card-box p{
+    color: var(---gray-400);
+}
