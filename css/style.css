@@ -38,6 +38,11 @@ h3{
     font-weight: 100;
     color: var(--primary-color);
 }
+h4{
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
 .container{
     width: 1140px;
     margin: 0 auto;
@@ -79,12 +84,13 @@ h3{
     display: inline-block;
     border-radius: 5px;
     background-color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
 }
 .box2 .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 140px 0;
+    padding: 100px 0;
 }
 .box2 p{
     font-family: 'Roboto', sans-serif;
@@ -101,7 +107,7 @@ h3{
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
 }
-.cards .container{
+.all-cards{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -137,6 +143,49 @@ h3{
     display: block;
     text-align: center;
 }
-.card-box p{
+.card-box p{   
     color: var(---gray-400);
+    width: 285px;
 }
+.title{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 40px;
+}
+.coment .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+}
+.content-coment{
+    text-align: center;
+}
+.content-coment h3{
+    margin: 20px 0;
+    font-size: 40px
+}
+.content-coment p{
+    color: var(---gray-400);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.footer{
+    background-color: var(--primary-color);
+}
+.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px  0;
+    color: var(--gray-100);
+}
+.footer p{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.footer img{
+    margin-right: 20px;
+}
+
