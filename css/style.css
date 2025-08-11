@@ -49,9 +49,12 @@ h4{
 }
 .header{
     position: sticky;
+     padding: 10px 0;
+     top: 0;
+     z-index: 1;
+     background-color: var(--gray-100);
 }
 .header .container{
- padding: 10px 0;
  display: flex;
  justify-content: space-between;
  align-items: center;
