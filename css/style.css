@@ -44,7 +44,8 @@ h4{
     margin-bottom: 15px;
 }
 .container{
-    width: 1140px;
+    width: 95%;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .header{
@@ -203,5 +204,7 @@ h4{
     margin-right: 20px;
 }
 @media (max-width:1200px){
-
+    .menu{
+        display: none;
+    }
 }
