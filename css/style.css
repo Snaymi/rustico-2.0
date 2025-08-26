@@ -203,8 +203,17 @@ h4{
 .footer img{
     margin-right: 20px;
 }
-@media (max-width:1200px){
+@media (max-width:1250px){
     .menu{
         display: none;
+    }
+    .barra{
+        width: 40px;
+        height: 3px;
+        background-color: #000;
+        margin-bottom: 4px;
+    }
+    .show{
+        
     }
 }
