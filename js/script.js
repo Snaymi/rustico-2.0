@@ -2,8 +2,14 @@ const btnMenu = document.querySelector('.btn-menu');
 const menu = document.querySelector('.menu');
 //'querySelector - seleciona CLASSES 
 //'getElementById - Seleciona ID's #
-function mexerNoMenu() {
-    alert('Houve um click aqui!')
-    console.log('houve um click')
+function manipularMenuNoMenu() {
+    console.log('Houve um click no menu ✅');
+    menu.classList.toggle('show'); //adiciona e remove a classe show ao MENU
+    
 }
-btnMenu.addEventListener('click', mexerNoMenu)
+function closeMenu() {
+    console.log('Fechando menu ✅');
+    menu.classList.remove('show');
+}
+btnMenu.addEventListener('click', manipularMenuNoMenu);
+menu.addEventListener('click', closeMenu);

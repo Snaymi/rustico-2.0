@@ -2,7 +2,14 @@
     --primary-color: #473C38;
     --secondary-color: #C2B19C;
     --gray-100: #F0F1F0;
-    ---gray-400: #666666;            
+    ---gray-400: #666666;      
+    --third-color: #B2935B;      
+}
+html{
+    scroll-behavior: smooth;
+}
+#catalogo{
+    scroll-margin-top: 180px;
 }
 body{
    font-family: 'Playfair Display', sans-serif;
@@ -206,14 +213,30 @@ h4{
 @media (max-width:1250px){
     .menu{
         display: none;
+        background-color: var(--third-color);
+        position:absolute;
+        left: 0;
+        top: 100px;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        row-gap:0;
+        
+    }
+    .menu a{
+       border-bottom: 1px solid;
+       padding: 15px 0 ;
+       margin-left: 15px;
+       
     }
     .barra{
         width: 40px;
         height: 3px;
-        background-color: #000;
+        background-color: var(--primary-color);
         margin-bottom: 4px;
     }
     .show{
-        
+        display: flex; 
+        /* display flex remove display none do MENU */
     }
 }
