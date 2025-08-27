@@ -15,7 +15,7 @@ body{
    font-family: 'Playfair Display', sans-serif;
 }
 img{
-    display: inline-block;
+    display: block;
 }
 *{
     margin: 0;
@@ -86,7 +86,7 @@ h4{
 
 .txt{
  color: #fff;
- width: 460px;
+ 
 }
 .btn-link{
     color: var(--primary-color);
@@ -239,4 +239,28 @@ h4{
         display: flex; 
         /* display flex remove display none do MENU */
     }
+}
+@media(max-width: 920px){
+    .box1 .container{
+        flex-direction: column;
+        text-align: center;
+    
+    }
+    .img-bed img { 
+        max-width: 265px;
+        width: 100%;
+        height: auto;
+    }
+    .content{
+    max-width: 535px;
+        width: 100%;
+        margin-bottom: 60px;;
+    }
+}
+@media(max-width: 650px){
+    h1{
+        font-size: 32px;
+    }
+    
+    
 }
