@@ -219,6 +219,10 @@ h4{
 .footer img{
     margin-right: 20px;
 }
+.img-redes{
+    display: flex;
+    column-gap: ;
+}
 @media (max-width:1250px){
     
     .menu{
@@ -288,6 +292,9 @@ h4{
     flex-direction: column;
     align-items: start;
     row-gap: 50px;
+   }
+   .contact{
+    color: var(--gray-100)
    }
    .img-redes{
     display: flex;
