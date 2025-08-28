@@ -129,10 +129,17 @@ h4{
     transform: scale(1.05);
     transition: 300ms;
 }
+
+.cards{
+    background-color: #F0F1F0;
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
 .all-cards{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    row-gap: 24px;
 }
 .img-card{
     display: flex;
@@ -156,7 +163,9 @@ h4{
     width: 285px;
 }
 .card-box{
+    background-color: #fff;
     padding: 40px;
+    border-radius:  5px;
 }
 .card-box img{
     border-radius: 5px;
@@ -266,6 +275,21 @@ h4{
     h1{
         font-size: 32px;
     }
-    
-    
+    h2{
+        font-size: 29px;
+    }
+    .all-cards{
+        flex-direction: column;
+    }
+    .content-coment h3{
+        font-size: 20px;
+    }
+   .footer .container{
+    flex-direction: column;
+    align-items: start;
+    row-gap: 50px;
+   }
+   .img-redes{
+    display: flex;
+   }
 }
