@@ -221,7 +221,7 @@ h4{
 }
 .img-redes{
     display: flex;
-    column-gap: ;
+    column-gap: 5px;
 }
 @media (max-width:1250px){
     
@@ -266,6 +266,7 @@ h4{
     .img-armario{
         display:  none;
     }
+
     .box2 .btn{
         margin-top: 40px
     }
