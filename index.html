@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
     <title>Rústico 2.0</title>
 </head>
+
 <body>
     <div class="header">
         <div class="container">
@@ -31,60 +35,89 @@
         <div class="container">
             <div class="content">
                 <h1>A maior rede de móveis rústicos do Brasil</h1>
-            <p class="txt">Descubra a elegância do rústico com a durabilidade que você merece. Peças exclusivas para transformar sua casa.</p>
-            <a href="#catalogo" id="" class="btn-link">Acessar Catálgo</a>
+                <p class="txt">Descubra a elegância do rústico com a durabilidade que você merece. Peças exclusivas para
+                    transformar sua casa.</p>
+                <a href="#catalogo" id="" class="btn-link">Acessar Catálgo</a>
             </div>
-            <div class="img-bed">
-                <img src="img/cama_rustica.webp" alt="cama rustica" height="290">
+            <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                    <div class="img-content swiper-slide ">
+                        <img src="img/cama_rustica.webp" alt="cama rustica" height="290">
+                    </div>
+                    <div class="img-content swiper-slide ">
+                        <img src="img/rustico2_1.webp" alt="cama rustica" height="290">
+                    </div>
+                    <div class="img-content swiper-slide ">
+                        <img src="img//guarda-roupa.webp" alt="cama rustica" height="290">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
     <div class="box2">
         <div class="container">
-             <div class="content">
+            <div class="content">
                 <h2>Da nossa fábrica direto para sua casa!</h2>
                 <p>
-                    Trabalhamos com paixão e dedicação para trazer o melhor do mobiliário rústico diretamente para o conforto do seu lar. Cada peça é criada com o cuidado de quem entende a importância de uma casa bem decorada. Nossos móveis são projetados para durar, com atenção aos mínimos detalhes e acabamentos impecáveis.</p>
+                    Trabalhamos com paixão e dedicação para trazer o melhor do mobiliário rústico diretamente para o
+                    conforto do seu lar. Cada peça é criada com o cuidado de quem entende a importância de uma casa bem
+                    decorada. Nossos móveis são projetados para durar, com atenção aos mínimos detalhes e acabamentos
+                    impecáveis.</p>
                 <p>
-                    Utilizamos apenas madeiras de origem certificada, respeitando o meio ambiente e garantindo a qualidade do produto final. Explore nossa linha exclusiva e sinta a diferença que a madeira certificada pode fazer em seu ambiente.</p>
+                    Utilizamos apenas madeiras de origem certificada, respeitando o meio ambiente e garantindo a
+                    qualidade do produto final. Explore nossa linha exclusiva e sinta a diferença que a madeira
+                    certificada pode fazer em seu ambiente.</p>
                 <a href="#quem-somos" class="btn">Leia mais</a>
-             </div>
-             <div class="img-armario">
+            </div>
+            <div class="img-armario">
                 <img src="img/armario_rustico.webp" alt="armario rustico" height="595">
-             </div>
+            </div>
         </div>
     </div>
     <div class="cards">
         <div class="container">
             <div class="title">
-        <h2 id="catalogo">Madeiras certificadas</h2>
-    </div>
-    <div class="all-cards">
-            <div class="card-box">
-                <div class="img-card">
-                    <img src="img/balcao_rustico.webp" alt="balcao rustico">
-                </div>
-                <h3>Rústico para sua casa</h3>
-                <p>Transforme sua casa com nossos móveis rústicos, que aliam beleza e praticidade. Oferecemos desde mesas de jantar robustas até estantes.</p>
-                <a href="#" class="btn">Ver produtos</a>
+                <h2 id="catalogo">Madeiras certificadas</h2>
             </div>
-            <div class="card-box">
-                <div class="img-card-home">
-                    <img src="img/home_office_rustico.webp" alt="computador na mesa">
+            <div class="all-cards">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="card-box swiper-slide">
+                            <div class="img-card">
+                                <img src="img/balcao_rustico.webp" alt="balcao rustico">
+                            </div>
+                            <h3>Rústico para sua casa</h3>
+                            <p>Transforme sua casa com nossos móveis rústicos, que aliam beleza e praticidade.
+                                Oferecemos desde
+                                mesas de jantar robustas até estantes.</p>
+                            <a href="#" class="btn">Ver produtos</a>
+                        </div>
+                        <div class="card-box swiper-slide">
+                            <div class="img-card-home">
+                                <img src="img/home_office_rustico.webp" alt="computador na mesa">
+                            </div>
+                            <h3>Rústico para seu trabalho</h3>
+                            <p>Crie um ambiente de trabalho único e inspirador com nossa linha de móveis rústicos para
+                                empresas.
+                                De mesas de reuniões a balcões de atendimento.</p>
+                            <a href="#" class="btn">Ver produtos</a>
+                        </div>
+                        <div class="card-box swiper-slide">
+                            <div class="img-card-mesa">
+                                <img src="img/mesa_rustica.webp" alt="mesa rustica">
+                            </div>
+                            <h3>Rústico para sua fazenda</h3>
+                            <p>Para quem vive no campo ou deseja trazer um pedaço da vida rural para o dia a dia, nossos
+                                móveis
+                                para fazenda são a escolha perfeita.</p>
+                            <a href="#" class="btn">Ver produtos</a>
+                        </div>
+                    </div>
                 </div>
-                <h3>Rústico para seu trabalho</h3>
-                <p>Crie um ambiente de trabalho único e inspirador com nossa linha de móveis rústicos para empresas. De mesas de reuniões a balcões de atendimento.</p>
-                <a href="#" class="btn">Ver produtos</a>
             </div>
-            <div class="card-box">
-                <div class="img-card-mesa">
-                    <img src="img/mesa_rustica.webp" alt="mesa rustica">
-                </div>
-                <h3>Rústico para sua fazenda</h3>
-                <p>Para quem vive no campo ou deseja trazer um pedaço da vida rural para o dia a dia, nossos móveis para fazenda são a escolha perfeita.</p>
-                <a href="#" class="btn">Ver produtos</a>
-            </div>
-        </div>
         </div>
     </div>
     <div class="coment">
@@ -102,7 +135,7 @@
         <div class="container">
             <div class="local">
                 <h4>Onde estamos</h3>
-                <p>Av. Rio Branco, 185 - Centro - Rio de Janeiro - RJ</p>
+                    <p>Av. Rio Branco, 185 - Centro - Rio de Janeiro - RJ</p>
             </div>
             <div class="contact">
                 <h4>Fale com nosso time</h4>
@@ -121,16 +154,28 @@
     </div>
     <script src="js/script.js"></script>
     <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-      },
-    });
-  </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper1 = new Swiper(".mySwiper1", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".mySwiper1 .swiper-button-next",
+                prevEl: ".mySwiper1 .swiper-button-prev",
+            },
+        }); // Segundo efeito
+        var swiper2 = new Swiper(".mySwiper2", {
+            effect: "cards",
+            grabCursor: true,
+        });
+    </script>
 </body>
+
 </html>

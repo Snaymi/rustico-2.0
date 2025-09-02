@@ -1,11 +1,10 @@
 const btnMenu = document.querySelector('.btn-menu');
 const menu = document.querySelector('.menu');
-//'querySelector - seleciona CLASSES 
-//'getElementById - Seleciona ID's #
+
+// Menu
 function manipularMenuNoMenu() {
     console.log('Houve um click no menu ✅');
-    menu.classList.toggle('show'); //adiciona e remove a classe show ao MENU
-    
+    menu.classList.toggle('show');
 }
 function closeMenu() {
     console.log('Fechando menu ✅');
@@ -13,3 +12,4 @@ function closeMenu() {
 }
 btnMenu.addEventListener('click', manipularMenuNoMenu);
 menu.addEventListener('click', closeMenu);
+

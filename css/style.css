@@ -50,6 +50,20 @@ h4{
     font-weight: 100;
     margin-bottom: 15px;
 }
+.swiper {
+    max-width: 350px;
+    width: 100%;
+    z-index: 1;
+}
+.swiper-button-next , .swiper-button-prev{
+    color: var(--third-color);
+    padding: 30px 30px;
+
+}
+.swiper-button-next:hover , .swiper-button-prev:hover{
+    background-color: var(---gray-400);
+   border-radius: 20px;
+}
 .container{
     width: 95%;
     max-width: 1140px;
@@ -59,7 +73,7 @@ h4{
     position: sticky;
     padding: 10px 0;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: var(--gray-100);
 }
 .header .container{
@@ -251,6 +265,9 @@ h4{
         display: flex; 
         /* display flex remove display none do MENU */
     }
+        .all-cards{
+        flex-direction: column;
+    }
 }
 @media(max-width: 920px){
     .box1 .container{
@@ -258,7 +275,7 @@ h4{
         text-align: center;
     
     }
-    .img-bed img { 
+    .img-content img { 
         max-width: 265px;
         width: 100%;
         height: auto;
@@ -282,9 +299,6 @@ h4{
     }
     h2{
         font-size: 29px;
-    }
-    .all-cards{
-        flex-direction: column;
     }
     .content-coment h3{
         font-size: 20px;
