@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --brand: #20AD96;
+    --brand-dark: #028176;
+    --brand-light: #7ff3e5;
+    --brand-lighter: #F3FFFD;
+    --dark-gray: #333333;
+    --bright-gray: #666666;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 60px;
+    margin: 0 0 24px 0;
+    line-height: 100%;
+}
+
+h2 {
+    font-size: 40px;
+    color: var(--dark-gray);
+    line-height: 100%;
+}
+
+h3 {
+    color: var(--brand);
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+.background-popoup {
+    background-color: #000000c7;
+    position: fixed;
+    z-index: 5;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hide-popup {
+    display: none;
+}
+
+.img-popup {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+}
+
+.img-popup span {
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    transition: 300ms ease-in;
+    cursor: pointer;
+}
+
+.img-popup span:hover {
+    color: rgb(75, 191, 245);
+    transform: scale(1.3);
+}
+
+.container {
+    width: 95%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    background-color: #fff;
+    padding: 32px 0;
+}
+
+.header .container {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: var(--dark-gray);
+}
+
+.menu a:hover {
+    color: var(--brand-dark);
+    text-decoration: underline;
+}
+
+.bright-btn {
+    background-color: var(--brand);
+    border-radius: 10px;
+    padding: 12px 20px;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.bright-btn:hover {
+    background-color: var(--brand-dark);
+    text-decoration: none;
+}
+
+.first {
+
+    background-size: cover;
+    background-position: top center;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.first h2 {
+    color: #ffffff;
+    font-size: 60px;
+    margin: 0 0 24px 0;
+    line-height: 100%;
+}
+
+.slide1 {
+    background-image: url(../img/hero_section.webp);
+}
+
+.slide2 {
+    background-image: url(../img/consultorio.webp);
+}
+
+.slide3 {
+    background-image: url(../img/drsorrindo.webp);
+}
+
+.slide4 {
+    background-image: url(../img/crianca-dentista.webp);
+}
+
+.first .container {
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+.first .container a {
+    display: inline-block;
+    margin: 25px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    transition: all 200ms ease-in;
+    margin: -15px -15px;
+    font-weight: 700;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 15px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: var(--brand-dark);
+    border-radius: 100px;
+    color: #fff;
+}
+
+.smile {
+    width: 560px;
+}
+
+.middle-content .container {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.content {
+    margin-left: 25px;
+    padding: 40px 0;
+}
+
+.content p {
+    margin: 30px 0;
+    color: var(--bright-gray);
+    line-height: 150%;
+}
+
+.title-box {
+    text-align: center;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.our-services {
+    margin-bottom: 100px;
+}
+
+.our-services .container p {
+    line-height: 150%;
+    opacity: 0.7;
+    color: var(--bright-gray);
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card {
+    padding: 58px 24px;
+    display: block;
+    text-align: center;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #ffffff;
+    transition: all 300ms ease-in;
+}
+
+.card p {
+    line-height: 150%;
+    margin-top: 20px;
+    font-size: 14px;
+    width: 315px;
+}
+
+.card:hover {
+    background-color: var(--brand);
+}
+
+.card:hover h3,
+.card:hover p {
+    color: #ffffff;
+
+
+}
+
+.mySwiperCards {
+    text-align: center;
+    width: 350px;
+
+}
+
+.swiper-wrapper {
+    background-color: #fdfdfd;
+    transition: 200ms ease-in;
+}
+
+.swiper-slide {
+    transform: 300ms ease;
+}
+
+.schedule-now {
+    margin-bottom: 100px;
+    background-color: var(--brand);
+}
+
+.schedule-now .container {
+    display: flex;
+    align-items: center;
+    row-gap: 25px;
+    position: relative;
+}
+
+.container .bright-btn {
+    border: solid 2px #ffffff;
+}
+
+.paragraph {
+    margin: 25px 0;
+    line-height: 150%;
+}
+
+.our-pacients {
+    margin-bottom: 135px;
+}
+
+.description,
+.description h2 {
+    color: #ffffff
+}
+
+.img-smile {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.description {
+    width: 850px;
+    padding: 50px 0;
+}
+
+.coment-content {
+    text-align: center;
+}
+
+.coment {
+    color: var(--gray-600);
+    margin-bottom: 0;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 150%;
+    margin: 36px 0;
+}
+
+.client {
+    color: var(--brand);
+    font-weight: 600;
+}
+
+.map-content .container {
+    display: flex;
+}
+
+.content-text-details {
+    list-style-position: inside;
+}
+
+.address {
+    margin: 16px 0;
+}
+
+.content-text-details h2 {
+    margin-bottom: 24px;
+    max-width: 560px;
+    width: 100%;
+}
+
+.content-text-details h3 {
+    margin-bottom: 13px;
+}
+
+ul {
+    color: var(--gray-600);
+    line-height: 150%;
+}
+
+.map-content {
+    margin-bottom: 100px;
+}
+
+.map {
+    max-width: 560px;
+    width: 100%;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+.footer {
+    background-color: var(--brand-dark);
+    color: #ffffff;
+    padding: 24px 0;
+}
+
+.footer p {
+    margin: 5px 0;
+    line-height: 150%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+@media(max-width: 1200px) {
+    .img-smile {
+        display: none;
+    }
+
+    .options {
+        justify-content: center;
+    }
+
+    .map-content .container {
+        flex-direction: column;
+    }
+
+    .map {
+        margin-top: 35px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 950px) {
+
+    .barra {
+        width: 40px;
+        height: 3px;
+        background-color: var(--brand);
+        margin: 5px 0;
+        transition: 300ms;
+    }
+
+    .menu {
+        /* display:none; */
+        position: absolute;
+        top: 101px;
+        left: 0;
+        background-color: var(--brand-dark);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        row-gap: 0;
+        transform: translateX(100%);
+        transition: 300ms ease-in;
+
+    }
+
+    .menu a {
+        color: #fff;
+        margin: 5px 0;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    .btn-menu.x .barra:first-child {
+        transform: rotate(-45deg) translatey(11px) scale(0.7);
+    }
+
+    .btn-menu.x .barra:nth-child(2){
+        transform: translateX(100px);
+    }
+    .btn-menu.x .barra:last-child {
+        transform: rotate(45deg) translateY(-11px) scale(0.7);
+
+    }
+
+    .show {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    .middle-content .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clinical-img img {
+        max-width: 560px;
+        height: auto;
+        width: 100%;
+    }
+
+    .middle-content .content {
+        max-width: 550px;
+        width: 100%;
+    }
+
+    .title-box {
+        max-width: 750px;
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 20px;
+    }
+
+    .img-popup img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media(max-width: 600px) {
+        .smile h1 {
+            font-size: 20px;
+            width: 350px;
+        }
+
+        .smile h2 {
+            font-size: 20px;
+            width: 350px;
+        }
+
+        .first {
+            background-position: 60% center;
+        }
+
+        .smile p {
+            width: 300px;
+        }
+    }
+
+    @media(max-width: 460px) {
+        .bright-btn {
+            font-size: 13px;
+        }
+
+        .smile h1 {
+            font-size: 36px;
+        }
+
+        .card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
