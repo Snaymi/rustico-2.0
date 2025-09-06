@@ -307,7 +307,6 @@ h4 {
 @media (max-width:1250px) {
 
     .menu {
-        display: none;
         background-color: var(--third-color);
         position: absolute;
         left: 0;
@@ -316,6 +315,8 @@ h4 {
         height: 100vh;
         flex-direction: column;
         row-gap: 0;
+        transition: 400ms;
+        transform: translateX(100%);
     }
 
     .menu a {
@@ -335,6 +336,7 @@ h4 {
     .show {
         display: flex;
         /* display flex remove display none do MENU */
+        transform: translateX(0);
     }
 
     .allcards {
